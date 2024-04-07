@@ -1,4 +1,5 @@
 require("tejas.remap")
+require("tejas.set")
 require("tejas.lazy_init")
 local lsp = require("lsp-zero")
 
@@ -18,6 +19,3 @@ lsp.on_attach(function(client, bufnr)
 end)
 
 lsp.setup()
-
-print("Hello from tejas")
-
