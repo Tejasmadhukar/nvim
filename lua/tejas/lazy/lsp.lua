@@ -30,7 +30,7 @@ return {
 
 			-- And you can configure cmp even more, if you want to.
 			local cmp = require('cmp')
-			local cmp_action = lsp_zero.cmp_action()
+            local cmp_select = { behavior = cmp.SelectBehavior.Select }
 
 			cmp.setup({
 				formatting = lsp_zero.cmp_format({details = true}),
